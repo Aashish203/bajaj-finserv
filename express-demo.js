@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-app.get('/', (request, response) => {
+app.post, (request, response) => {
     var arr =request.query.data;
     var len = arr.length;
     var numbers = [];
@@ -15,10 +15,10 @@ app.get('/', (request, response) => {
     }
 
     response.write(JSON.stringify({"is_success": "True",
-    "user_id": "Akshay_Pratap_Singh_27082001",
+    "user_id": "Aashish_singh_1905149",
     "count": len,
-    "email": "1905733@kiit.ac.in",
-    "roll_number": "1905733",
+    "email": "1905149@kiit.ac.in",
+    "roll_number": "1905149",
     "numbers": numbers,
     "alphabets": alphabets}));
     response.end();
